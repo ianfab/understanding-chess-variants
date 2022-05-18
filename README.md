@@ -4,7 +4,7 @@ This is a collection of ideas for algorithms to discover chess knowledge and con
 The exact scope and realization of these ideas is unclear, it is just an outline of curiosity-driven experiments that might or might not result in useful chess variant understanding, tools, and data.
 
 ## Piece values
-Human understandable piece values free from engine-specific search and evaluation artifacts could e.g. be obtained using logistic regression, as already done for [chess](https://www.r-bloggers.com/2015/06/big-data-and-chess-what-are-the-predictive-point-values-of-chess-pieces/) and [atomic](https://www.gilgamath.com/atomic-two.html), but based on high-level engine games in order to be independent from human data.
+Human understandable piece values free from engine-specific search and evaluation artifacts could e.g. be obtained using logistic regression, as already done for [chess](https://www.r-bloggers.com/2015/06/big-data-and-chess-what-are-the-predictive-point-values-of-chess-pieces/) and [atomic](https://www.gilgamath.com/atomic-two.html), but based on high-level engine games in order to be independent from human data. For increased stability the set of positions could be restricted by requiring a minimum number of subsequent moves without changes of material balance (captures, promotions) in order to get a more static piece valuation.
 
 ## Openings
 UCT intuitively should be a reasonable choice to create an opening tree with a good balance between breadth, depth, and conciseness in an algorithmic fashion. The MCTS search could either be integrated into the engine itself or be implemented separately, allowing the use of arbitrary (also alpha-beta) UCI engines for the evaluation.
