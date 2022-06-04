@@ -28,3 +28,5 @@ First experiments are at https://github.com/ianfab/chess-metrics.
 
 ## Endgames
 Endgame knowledge should ideally be crafted using tablebases. In lack thereof a first step can be to do a frequency analysis of occuring material distributions in high-level engine self-play games.
+
+See https://github.com/ianfab/chess-variant-stats.
