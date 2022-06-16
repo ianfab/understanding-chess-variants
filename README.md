@@ -3,6 +3,13 @@ This is a collection of ideas for algorithms to discover chess knowledge and con
 
 The exact scope and realization of these ideas is unclear, it is just an outline of curiosity-driven experiments that might or might not result in useful chess variant understanding, tools, and data.
 
+## Basic game statistics
+Some basic statistics can give indication about a game's characteristics, such as duration, balancedness, complexity, etc.
+
+* Game length
+* Result distribution
+* Branching factor
+
 ## Piece values
 Human understandable piece values free from engine-specific search and evaluation artifacts could e.g. be obtained using logistic regression, as already done for [chess](https://www.r-bloggers.com/2015/06/big-data-and-chess-what-are-the-predictive-point-values-of-chess-pieces/) and [atomic](https://www.gilgamath.com/atomic-two.html), but based on high-level engine games in order to be independent from human data. For increased stability the set of positions could be restricted by requiring a minimum number of subsequent moves without changes of material balance (captures, promotions) in order to get a more static piece valuation.
 
@@ -29,6 +36,6 @@ The character of a position, whether it is positional or tactical, simple or com
 First experiments are at https://github.com/ianfab/chess-metrics.
 
 ## Endgames
-Endgame knowledge should ideally be crafted using tablebases. In lack thereof a first step can be to do a frequency analysis of occuring material distributions in high-level engine self-play games, as well as to collect the WLD statistics for eahc endgame in the generated data.
+Endgame knowledge should ideally be crafted using tablebases. In lack thereof a first step can be to do a frequency analysis of occuring material distributions in high-level engine self-play games, as well as to collect the WLD statistics for each endgame in the generated data. This can also include the identification of sufficient/insufficient mating material.
 
 See https://github.com/ianfab/chess-variant-stats.
