@@ -46,7 +46,7 @@ See https://github.com/ianfab/chess-variant-stats.
 
 ## Workflow
 
-Using the above tools, for a given game one can
+Using the above tools, one can then for a given chess variant execute the following steps in order to do a first analysis of the game.
 
 1. Define rules using [variants.ini](https://github.com/ianfab/Fairy-Stockfish/blob/master/src/variants.ini)
 2. Optionally train NNUE using the [variant NNUE trainer](https://github.com/fairy-stockfish/variant-nnue-pytorch)
