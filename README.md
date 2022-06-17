@@ -1,7 +1,5 @@
 # Understanding chess
-This is a collection of ideas for algorithms to discover chess knowledge and content in a systematic way, preferably using generic [chess variant tools](https://github.com/ianfab/Fairy-Stockfish/wiki/Related-projects) based on [Fairy-Stockfish](https://github.com/ianfab/Fairy-Stockfish) for a consistent framework applicable to many games. As this knowledge mostly already exists for chess itself this will first and foremost be a test of the hypotheses and algorithms. Once they generate good results they can however be applied to a large variety of chess variants where corresponding knowledge and data is very limited or non-existent.
-
-The exact scope and realization of these ideas is unclear, it is just an outline of curiosity-driven experiments that might or might not result in useful chess variant understanding, tools, and data.
+This is a collection of ideas for algorithms to discover chess knowledge and content in a systematic way, preferably using generic [chess variant tools](https://github.com/ianfab/Fairy-Stockfish/wiki/Related-projects) based on [Fairy-Stockfish](https://github.com/ianfab/Fairy-Stockfish) for a consistent framework applicable to many games. As this knowledge mostly already exists for chess itself, using it on chess first and foremost serves as a test of the hypotheses and algorithms. Once they generate good results they can however be applied to a large variety of chess variants where corresponding knowledge and data is very limited or non-existent, to hopefully generate useful chess variant understanding, tools, and data.
 
 ## Basic game statistics
 Some basic statistics can give indication about a game's characteristics, such as duration, balancedness, complexity, etc.
@@ -19,6 +17,8 @@ See https://github.com/ianfab/chess-variant-stats.
 
 ## Openings
 UCT intuitively should be a reasonable choice to create an opening tree with a good balance between breadth, depth, and conciseness in an algorithmic fashion. The MCTS search could either be integrated into the engine itself or be implemented separately, allowing the use of arbitrary (also alpha-beta) UCI engines for the evaluation.
+
+See https://github.com/ianfab/chess-variant-mcts.
 
 ## Tactics
 Tactic puzzles could be defined as a sequence of best moves by one side where any suboptimal play leads to a significantly worse position. In lack of perfect game theoretical results a heuristical engine analysis defines the evaluation.
