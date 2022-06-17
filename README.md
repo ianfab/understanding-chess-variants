@@ -1,5 +1,5 @@
-# Understanding chess
-This is a collection of ideas for algorithms to discover chess knowledge and content in a systematic way, preferably using generic [chess variant tools](https://github.com/ianfab/Fairy-Stockfish/wiki/Related-projects) based on [Fairy-Stockfish](https://github.com/ianfab/Fairy-Stockfish) for a consistent framework applicable to many games. As this knowledge mostly already exists for chess itself, using it on chess first and foremost serves as a test of the hypotheses and algorithms. Once they generate good results they can however be applied to a large variety of chess variants where corresponding knowledge and data is very limited or non-existent, to hopefully generate useful chess variant understanding, tools, and data.
+# Understanding chess variants
+This is a collection of ideas for algorithms to discover chess variant knowledge and content in a systematic way, preferably using generic [chess variant tools](https://github.com/ianfab/Fairy-Stockfish/wiki/Related-projects) based on [Fairy-Stockfish](https://github.com/ianfab/Fairy-Stockfish) for a consistent framework applicable to many games. As this knowledge mostly already exists for chess itself, using it on chess first and foremost serves as a test of the hypotheses and algorithms. Once they generate good results they can however be applied to a large variety of chess variants where corresponding knowledge and data is very limited or non-existent, to hopefully generate useful chess variant understanding, tools, and data.
 
 ## Concepts
 
